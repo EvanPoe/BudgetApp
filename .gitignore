@@ -1,0 +1,36 @@
+# Ignore the .idea folder (JetBrains IDEs like PhpStorm)
+.idea/
+
+# Ignore node modules (if you're using Node.js)
+node_modules/
+
+# Composer dependencies
+/vendor/
+
+# Ignore log files and system files
+*.log
+*.cache
+*.tmp
+
+# Ignore environment variable files
+.env
+
+# Ignore IDE-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled code and caches
+/public/cache/
+public/uploads/
+
+# Ignore PHPUnit result logs
+phpunit.xml
+phpunit-result.cache
+
+# Ignore Docker-related files (if not needed in the repo)
+docker-compose.override.yml
