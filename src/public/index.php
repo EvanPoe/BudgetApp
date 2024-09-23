@@ -39,7 +39,7 @@ if (($handle = fopen("../transaction_files/sample_1.csv", "r")) !== FALSE) {
 
                     // Convert to float, strip the dollar sign, and add to expenses
                     $netExpenses += (float) str_replace(['$', ','], '', $trimmedCell);
-                } elseif (strpos($trimmedCell, "$") === 0) {
+                } elseif (str_starts_with($trimmedCell, "$")) {
                     // If the value starts with "$", it's an income (positive)
                     echo "<td style='color: green;'>" . htmlspecialchars($cell) . "</td>";
 
